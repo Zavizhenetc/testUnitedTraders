@@ -1,0 +1,126 @@
+.burger-menu {
+  @media screen and (max-width: 390px) {
+    right: 0.5em;
+  }
+
+  position: absolute;
+  top: 0;
+  right: 1.7em;
+  display: none;
+  margin: 5px 0 0 0;
+  text-align: center;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__wrapper-items {
+    @media screen and (max-width: 390px) {
+      height: 9em;
+      right: 0.3em;
+    }
+    &:before {
+      background: white;
+      opacity: 0.5;
+    }
+    &:after {
+      background: white;
+      opacity: 0.5;
+    }
+    list-style: none;
+    position: absolute;
+    top: 2.5em;
+    right: 1em;
+    height: 13em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__wrapper-item {
+    @media screen and (max-width: 390px) {
+      font-size: 13px;
+    }
+    text-decoration: none;
+    color: #ffff;
+    font-size: 16px;
+    line-height: 21px;
+    &:hover {
+      color: #ffff00;
+      .nav__items-img {
+        background-image: url('./images/arrow_down.png');
+      }
+    }
+  }
+
+  & svg {
+    height: 40px;
+    width: 60px;
+  }
+  & svg {
+    cursor: pointer;
+    height: 50px;
+    transform: translate3d(0px, 0px, 0px);
+    width: 80px;
+  }
+  & svg:not(:root) {
+    overflow: hidden;
+  }
+  & path.top {
+    stroke-dasharray: 240px, 950px;
+  }
+  & path.bottom {
+    stroke-dasharray: 240px, 950px;
+  }
+  & path {
+    fill: none;
+    stroke: #000;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    stroke-width: 40px;
+    transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25) 0s,
+      stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25) 0s;
+  }
+  & path.middle {
+    stroke-dasharray: 240px, 240px;
+  }
+  & path {
+    fill: none;
+    stroke: #fff;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    stroke-width: 40px;
+    transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25) 0s,
+      stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25) 0s;
+  }
+  & path.top {
+    stroke-dasharray: -650px;
+  }
+  & path.bottom {
+    stroke-dasharray: -650px;
+  }
+  & path.top {
+    stroke-dasharray: 240px, 950px;
+  }
+  & path.bottom {
+    stroke-dasharray: 240px, 950px;
+  }
+  &__wrapper {
+    display: none;
+  }
+  &__wrapper.active {
+    display: block;
+  }
+  &.active path.top {
+    stroke-dashoffset: -650px;
+  }
+  &.active path.bottom {
+    stroke-dashoffset: -650px;
+  }
+  &.active path.middle {
+    stroke-dasharray: 1px, 220px;
+    stroke-dashoffset: -115px;
+  }
+  @media screen and (max-width: 1150px) {
+    display: block;
+  }
+}

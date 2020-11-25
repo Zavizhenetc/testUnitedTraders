@@ -1,0 +1,50 @@
+.header {
+  min-height: 500px;
+  background-image: url('./images/header_bg.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  text-align: center;
+  color: #fff;
+  position: relative;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2%;
+  }
+  &__links {
+    @media screen and (max-width: 1150px) {
+      display: none;
+    }
+    display: flex;
+    list-style: none;
+    width: 12%;
+    justify-content: space-between;
+    margin-left: auto;
+  }
+  &__title {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 48px;
+    line-height: 57.52px;
+    margin: 0 auto;
+    margin-top: 1.7em;
+    white-space: pre-line;
+    @media screen and (max-width: 690px) {
+      font-size: calc((100vw - 320px) / (690 - 320) * (48 - 28) + 28px);
+      padding-right: 2em;
+      padding-left: 2em;
+    }
+  }
+  &__subtitle {
+    margin: 4.4em auto auto;
+    max-width: 80%;
+    font-size: 18px;
+    line-height: 23.31px;
+    font-weight: 400;
+  }
+}
