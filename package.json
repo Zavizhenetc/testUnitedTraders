@@ -1,5 +1,5 @@
 {
-  "name": "testunitedtraders",
+  "name": "test-ip-goa",
   "version": "0.0.1",
   "description": "",
   "main": "./src/index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Zavizhenetc/testUnitedTraders.git"
+    "url": "git+https://github.com/Zavizhenetc/testIPGOA.git"
   },
   "author": "Alex Zavizhenetc",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Zavizhenetc/testUnitedTraders/issues"
+    "url": "https://github.com/Zavizhenetc/testIPGOA/issues"
   },
-  "homepage": "https://github.com/Zavizhenetc/testUnitedTraders#readme",
+  "homepage": "https://github.com/Zavizhenetc/testIPGOA#readme",
   "devDependencies": {
     "@babel/cli": "^7.10.4",
     "@babel/core": "^7.10.4",

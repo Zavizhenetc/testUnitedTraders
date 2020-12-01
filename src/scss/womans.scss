@@ -1,0 +1,24 @@
+.womans {
+  max-width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3.3%;
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  &__title {
+    background-color: #1519ff;
+    color: #f4f4f4;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 120%;
+    text-transform: uppercase;
+    @media screen and (max-width: 1124px) {
+      font-size: 48px;
+      margin-bottom: 1em;
+    }
+    @media screen and (max-width: 440px) {
+      font-size: 30px;
+      margin-top: 2.16em;
+    }
+  }
+}

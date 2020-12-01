@@ -1,0 +1,136 @@
+$color-text: #676767;
+.woman {
+  display: flex;
+  max-width: 618px;
+  font-family: 'Helvetica Neue';
+  font-weight: normal;
+  margin-right: 2.5%;
+  margin-bottom: 2.4%;
+
+  &:nth-child(3n + 4) {
+    flex-direction: row-reverse;
+    .woman__img {
+      margin-right: 0%;
+      margin-left: 4.1%;
+    }
+    .woman__description {
+      padding-left: 0;
+    }
+  }
+  &:nth-child(3n + 5) {
+    flex-direction: row-reverse;
+    .woman__img {
+      margin-right: 0%;
+      margin-left: 4.1%;
+    }
+    .woman__description {
+      padding-left: 0;
+    }
+  }
+  &__img {
+    @media screen and (max-width: 900px) {
+      width: 343px;
+    }
+    @media screen and (max-width: 900px) {
+      width: 343px;
+    }
+  }
+
+  &__description {
+    border-top: 1px solid #00000040;
+    flex-direction: column;
+    padding: 1%;
+    padding-left: 5.3%;
+    @media screen and (max-width: 900px) {
+      width: 48%;
+      padding-left: 2.3%;
+    }
+    @media screen and (max-width: 580px) {
+      width: 100%;
+    }
+  }
+  &__title {
+    font-family: 'Space Grotesk';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin-bottom: 0.3em;
+    @media screen and (max-width: 900px) {
+      font-size: 18px;
+      line-height: 140%;
+    }
+    @media screen and (max-width: 440px) {
+      font-size: 14px;
+    }
+  }
+  &__subtitle {
+    font-family: 'Helvetica Neue';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 170%;
+    margin-top: 0;
+    color: $color-text;
+    @media screen and (max-width: 900px) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: 440px) {
+      font-size: 12px;
+    }
+  }
+  &__time {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 170%;
+    margin: 0;
+    margin-top: 1.5em;
+    @media screen and (max-width: 900px) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: 440px) {
+      font-size: 12px;
+    }
+  }
+  &__text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 170%;
+    color: $color-text;
+    margin-top: 0.7em;
+    @media screen and (max-width: 900px) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: 440px) {
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 6.7%;
+    &:nth-child(3n + 4) {
+      flex-direction: revert;
+      .woman__img {
+        margin-right: 0;
+        margin-left: 0;
+      }
+      .woman__description {
+        padding-left: 2.3%;
+      }
+    }
+    &:nth-child(3n + 5) {
+      flex-direction: revert;
+      .woman__img {
+        margin-right: 0%;
+        margin-left: 0;
+      }
+      .woman__description {
+        padding-left: 2.3%;
+      }
+    }
+  }
+  @media screen and (max-width: 580px) {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+}

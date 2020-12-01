@@ -1,12 +1,9 @@
-@import url('./vendor/normalize.css');
-@import './scss/root';
-@import './scss/header';
-@import './scss/logo';
-@import './scss/container';
-@import './scss/nav';
-@import './scss/main';
+@import './vendor/normalize';
+@import url('./vendor/fonts.css');
+@import './scss/body';
 @import './scss/button';
-@import './scss/partners';
-@import './scss/burger-menu';
-@import './scss/footer.scss';
+@import './scss/womans';
+@import './scss/woman';
+@import './scss/order';
+
 
